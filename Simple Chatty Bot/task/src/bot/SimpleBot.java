@@ -6,21 +6,21 @@ public class SimpleBot {
     final static Scanner scanner = new Scanner(System.in); // Do not change this line
 
     public static void main(String[] args) {
-        greet("Aid", "2018"); // change it as you need
+        greet("TARS", "2020"); // change it as you need
         remindName();
         guessAge();
         count();
-        // ...
+        test();
         end();
     }
 
     static void greet(String assistantName, String birthYear) {
         System.out.println("Hello! My name is " + assistantName + ".");
         System.out.println("I was created in " + birthYear + ".");
-        System.out.println("Please, remind me your name.");
     }
 
     static void remindName() {
+        System.out.println("Please, remind me your name.");
         String name = scanner.nextLine();
         System.out.println("What a great name you have, " + name + "!");
     }
@@ -45,7 +45,19 @@ public class SimpleBot {
 
     static void test() {
         System.out.println("Let's test your programming knowledge.");
-        // write your code here
+        System.out.println("Why do we use methods?\n" +
+                "1. To repeat a statement multiple times.\n" +
+                "2. To decompose a program into several small subroutines.\n" +
+                "3. To determine the execution time of a program.\n" +
+                "4. To interrupt the execution of a program.");
+
+        while (true) {
+            int input = scanner.nextInt();
+            if (input == 2)
+                break;
+
+            System.out.println("Please, try again.");
+        }
     }
 
     static void end() {
