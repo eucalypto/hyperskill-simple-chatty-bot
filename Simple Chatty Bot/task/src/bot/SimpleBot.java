@@ -6,8 +6,8 @@ public class SimpleBot {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Hello! My name is Aid.");
-        System.out.println("I was created in 2018.");
+        System.out.println("Hello! My name is TARS.");
+        System.out.println("I was created in 2020.");
         System.out.println("Please, remind me your name.");
 
         String name = scanner.nextLine();
@@ -25,7 +25,11 @@ public class SimpleBot {
         System.out.println("Your age is " + age + "; that's a good time to start programming!");
         System.out.println("Now I will prove to you that I can count to any number you want.");
 
-        // read a number and count to it here
+        var upperNumber = scanner.nextInt();
+
+        for (int i = 0; i <= upperNumber; i++) {
+            System.out.println(i + "!");
+        }
 
         System.out.println("Completed, have a nice day!");
     }
